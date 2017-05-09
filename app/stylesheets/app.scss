@@ -1,16 +1,151 @@
-$big-font: 15rem;
-
-.jumbo {
-    color: #333;
-    font-size: $big-font;
-    margin: 0;
-    text-shadow: 1px 2px 1px #DEDEDE, 2px 3px 0 #FEFEFE, -1px -1px 0 #222;
+html {
+    font-size: 0.625rem;
+    * {
+        box-sizing: border-box;
+    }
 }
 
-html {
-    body {
-        margin: 0;
-        padding: 0;
-        background: #CACACA;
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    transition: .35s ease all;
+    text-decoration: none;
+
+    &:hover {
+        transition: .1s ease all;
+    }
+}
+
+hr {
+    border: none;
+    background: none;
+    height: 0;
+    border-top: .1rem solid #aaa;
+    margin: 2rem 0;
+}
+
+button {
+    appearance: none;
+    border: none;
+    background: blue;
+    color: #fff;
+    border-radius: .3rem;
+    padding: .9rem 1.3rem;
+    cursor: pointer;
+    transition: .35s ease all;
+    box-shadow: 0 .2rem 0 0 #ccc;
+
+    &:hover {
+        transition: .1s ease all;
+        background: #ddd;
+        box-shadow: 0 .2rem 0 0 #aaa;
+    }
+
+    &:disabled {
+        color: #bbb;
+        background: #f0f0f0;
+        box-shadow: 0 .2rem 0 0 #ddd;
+    }
+}
+
+.menu-header {
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+}
+
+.page-wrapper {
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.menu-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.menu-content {
+    display: inline-block;
+    width: 120rem;
+}
+
+.food-category {
+    margin-top: 4rem;
+    text-transform: capitalize;
+}
+
+.menu-item {
+    margin: 0 2rem 5rem 0;
+    position: relative;
+    display: inline-block;
+}
+
+.item-name {
+    display: inline-block;
+    margin:0 4rem 1rem 0;
+}
+
+.item-price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+
+.item-description {
+    margin: 0 0 1rem 0;
+}
+
+.your-order {
+    font-size: .8em;
+    color: blue;
+    display: inline-block;
+    width: 30rem;
+    margin-right: 5rem;
+
+    .menu-item {
+        margin-bottom: 2rem;
+    }
+}
+
+.order-cost {
+    text-align: right;
+    padding-left: 2rem;
+}
+
+.order-summary {
+    max-width: 50rem;
+    margin: 5rem auto;
+    padding: 4rem;
+    box-shadow: 0 .2rem .3rem 0 blue;
+    border-top: .6rem solid blue;
+
+    h3 {
+        margin-top: 0 0 1rem 0;
+    }
+
+    .menu-item {
+        margin-bottom: 2rem;
+    }
+}
+
+.btn-place-order {
+    display: block;
+    width: 100%;
+    color: #fff;
+    background: blue;
+    box-shadow: 0 .2rem 0 0 #000;
+
+    &:hover {
+        background: #777;
+        box-shadow: 0 .2rem 0 0 #333;
+    }
+
+    &:disabled {
+        color: #bbb;
+        background: #f0f0f0;
+        box-shadow: 0 .2rem 0 0 #ddd;
     }
 }

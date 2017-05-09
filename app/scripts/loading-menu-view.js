@@ -1,7 +1,7 @@
 export default function loadingMenuView(store) {
 
     let $viewContent = $(`<section class="page-wrapper view-menu">
-                              <header class="menu-header"><h1>Cafe le Blanc/h1></header>
+                              <header class="menu-header"><h1>Cafe le Blanc</h1></header>
                         </section>`);
 
     let $menuSection = $(`<section class="menu">
