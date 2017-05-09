@@ -1,0 +1,27 @@
+
+## Models:
+    - full menu
+        - from https://tiy-austin-front-end-engineering.github.io/restaurantApi/fancy.json
+    - current order
+    - current items
+    - add tax
+    - display total
+
+#### Custom functions each model needs to be presented:
+
+## Views:
+    - Menu page
+    - Menu item
+    - Your Order
+    - Confirmation screen
+        - display order
+        - display total due
+
+#### what events does each view listen to?
+
+## Actions:
+    - view menu (initial view)
+    - add item to current order
+        - dispatch with object of selected menu item
+    - "order now"
+        - dispatch with array of full order
